@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/bgnew.png);
+  background-position-x: 500px;
+  background-position-y: 70px;
+  background-repeat: no-repeat;
+}
+
+.custom-nav .navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 1.8em;
+  color: #171826;
+  margin-left: 20px;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item {
+  margin-left: 2.2em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #171826;
+  font-weight: bold;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #4463c4;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .sign {
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f14d1c;
+  border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .sign:hover {
+  background-color: white;
+  color: #171826;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 2.9px 1.88em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .login {
+  border-radius: 3em;
+  padding-left: 2em;
+  box-sizing: border-box;
+  padding-right: 2em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 50px;
+  border: 2px solid black;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+}
+.custom-nav #navbarNav .navbar-nav .nav-item .login:hover {
+  background-color: #f14d1c;
+  color: white;
+  border: none;
+  border: 2px solid white;
+}
+
+.content {
+  width: 400px;
+  min-height: 500px;
+  margin-left: 100px;
+  box-sizing: border-box;
+  padding-top: 105px;
+}
+.content h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+.content p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: gray;
+}
+.content .read {
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f14d1c;
+  border-radius: 3em;
+  font-weight: 500;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    background-position: top left;
+  }
+  .content {
+    margin-left: 30px;
+  }
+  #navbarNav .navbar-nav .sign-login {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "login" "signin";
+    height: 100px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item {
+    margin-left: 2px;
+    width: 350px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .login {
+    grid-area: login;
+    box-shadow: 0 0 4px 4px #eee;
+    margin-left: 0px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .sign {
+    grid-area: signin;
+    box-shadow: 0 0 4px 4px #eee;
+    width: 100%;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .sign:hover {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center;
+  }
+  #navbarNav .navbar-nav .sign-login {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "login" "signin";
+    height: 100px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item {
+    margin-left: 2px;
+    width: 350px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .login {
+    grid-area: login;
+    box-shadow: 0 0 4px 4px #eee;
+    margin-left: 0px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .sign {
+    grid-area: signin;
+    box-shadow: 0 0 4px 4px #eee;
+    width: 100%;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .sign:hover {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 1204px) {
+  body {
+    background-position: center;
+  }
+  #navbarNav .navbar-nav .sign-login {
+    display: flex;
+    margin-left: 15px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item {
+    margin-left: 0;
+    width: 150px;
+  }
+  #navbarNav .navbar-nav .sign-login .nav-item .login {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
